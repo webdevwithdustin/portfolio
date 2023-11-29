@@ -1,0 +1,55 @@
+:root {
+    --light-blue: #A6DEF2;
+    --dark-blue: #036487;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h2 {
+    color: var(--dark-blue);
+    margin: 0 0 0.5em;
+    font-size: 3em
+}
+
+header nav .nav-link {
+    color: #333;
+}
+
+header nav .nav-link:hover {
+    color: var(--dark-blue);
+}
+
+#whiteLogo {
+    display: none;
+}
+
+#blackLogo {
+    display: block;
+}
+
+.switch-wrapper span {
+    color: #333;
+}
+
+.modal-content {
+    background-color: #f5f5f5;
+    border: none;
+}
+
+.arrow-down span {
+    font-size: 4em;
+    color: var(--dark-blue);
+}
+
+main a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid var(--dark-blue);
+}
+
+main a:hover {
+    color: var(--dark-blue);
+}

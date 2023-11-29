@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link id="darkStylesheet" rel="stylesheet" href="dark-mode.css">
+    <link id="lightStylesheet" rel="stylesheet" href="light-mode.css" disabled>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Dustin Kratochwill - Graphics & Logos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="index.html"><img id="whiteLogo" src="images/1x/DK-White.png">
+                    <img id="blackLogo" src="images/1x/DK-Black.png" style="display: none;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white ms-auto p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link" href="web-dev.html">Web Projects</a>
+                            <a class="nav-link" href="digi-mark.html">Digital Strategy</a>
+                            <a class="nav-link" href="graphics.html">Graphics</a>
+                            <a class="nav-link" href="contact.html">Connect</a>
+                            <p class="switch-wrapper ms-5 mb-0"><span class="material-symbols-outlined">dark_mode</span><label class="switch"><input type="checkbox" id="toggle" onchange="toggleDarkMode()"><span class="slider"></span></label><span class="material-symbols-outlined">light_mode</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="slide">
+            <div class="slide-content col-md-6">
+                <h1 class="text-center">Graphics & Collateral</h1>
+                <p class="text-center">As part of my experience, I've created various graphics and marketing collateral to compliment the websites and campaigns I've developed. Please find a sample of some of these items below.</p>
+                <div data-aos="zoom-in-down" data-aos-duration="1000" class="arrow-down"><span class="material-symbols-outlined">keyboard_double_arrow_down</span></div>
+            </div>
+        </div>
+        <div class="slide light">
+            <div class="slide-content col-md-8">
+                <h2 class="text-center">Billboard creatives</h2>
+                <p class="text-center col-md-7 m-auto">These creatives are displayed adjacent to one of the VCU Engineering makerspaces. Each creative runs for about 3 months in this location.</p>
+                <div class="grid-col-2" data-aos="zoom-in">
+                   <img src="images/Billboards/Billboard-20.jpg">
+                    <img src="images/Billboards/Billboard-19.jpg">
+                    <img src="images/Billboards/Billboard-18.jpg">
+                    <img src="images/Billboards/Billboard-16.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content col-md-8 py-5">
+                <h2 class="text-center">Digital campaign ads</h2>
+                <p class="text-center col-md-7 m-auto">These ads are displayed in an email newsletter sent out to members of the American Society for Engineering Education (ASEE).</p>
+                <div class="grid-col-3" data-aos="zoom-in">
+                    <img src="images/Ads/Ferri%20albuterol.png">
+                   <img src="images/Ads/Eskandarian%20named%20dean.png">
+                    <img src="images/Ads/M4ALL%20Gates%20Grant.png">
+                    <img src="images/Ads/USNWR%20ranking.png">
+                    <img src="images/Ads/Top%202%20Percent.png">
+                    <img src="images/Ads/Happy%20Holidays.png">
+                </div>
+            </div>
+        </div>
+        <div class="slide light">
+            <div class="slide-content col-md-8 py-5">
+                <h2 class="text-center">Marketing collateral</h2>
+                <p class="text-center col-md-7 m-auto">These graphics were created for a collection of pull-up banners that could be displayed during conferences or events.</p>
+                <div class="grid-col-3" data-aos="zoom-in">
+                   <img src="images/Collateral/Mechanobiology.png">
+                    <img src="images/Collateral/Regen%20Medicine.png">
+                    <img src="images/Collateral/Rehab%20Engineering.png">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content py-5">
+                <h2 class="text-center">Want to see more?</h2>
+                <p class="text-center col-md-6 m-auto">Ask me about any other graphics or marketing collateral I've created and I'd be happy to share those items with you.</p>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="mode-toggle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+</body>
+
+</html>
