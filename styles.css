@@ -152,6 +152,14 @@ header nav .nav-link {
     margin: 0px 1em;
 }
 
+header nav .navbar-toggler {
+    border: none;
+}
+
+header nav .navbar-toggler span {
+    font-size: 2em;
+}
+
 @media (max-width: 1024px) {
     header nav .nav-link {
         font-size: 1em;
@@ -241,6 +249,12 @@ main .slide.light h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .switch-wrapper {
+        display: none;
+    }
 }
 
 .switch-wrapper span {
